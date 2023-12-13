@@ -46,7 +46,7 @@ if($loginFlag==1) // if user is a valid user
         require_once('Views/DMDashboard.phtml');
     if($dataSet[0]->getUsertype()=='D')
         require_once('Views/DUDashboard.phtml');*/
-    require_once('Views/index.phtml');
+    require_once('Views/index.html');
 }
 else{
     require_once('Views/logIn.phtml');
