@@ -1,0 +1,38 @@
+<?php require_once("admindashboard.phtml"); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Create new Blog</title>  
+</head>
+<div style="margin-left: 20%;width: 75%" >
+
+
+
+<div class="wrapper">
+        <form class="login-form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+        <h2>Add New Drink</h2>
+
+            <div class="input-box">
+            <input type="text" id="juiceName" name="juiceName" placeholder="Juice Name" required >
+            <i class="fa-solid fa-martini-glass-citrus"></i>
+            </div>
+            <div class="input-box">
+            <input type="text" id="desc" name="desc" placeholder="Description" required>
+            <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                    <div class="input-box">
+            <input type="text" id="pic" name="pic" placeholder="html full link" required>
+            <i class="fa-solid fa-file-lines"></i>
+                    </div>
+              
+            
+            <button type="submit" name="submit" class="btn">Submit</button>
+
+        </form>
+</div>
+</div>
+</body>
+</html>

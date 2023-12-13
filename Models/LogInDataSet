@@ -1,0 +1,59 @@
+<?php
+require_once('Models/Database.php');
+require_once ('Models/LogInData.php');
+class logindataSet
+{
+    protected $dbHandle;
+    protected $dbInstance;
+
+    public function __construct()
+    {
+        $this->dbInstance = Database::getInstance();
+        $this->dbHandle = $this->dbInstance->getdbConnection();
+    }
+    // check if user is in database
+    protected function checkUser($firstName , $lastName , $email ) {
+        $stmt = $this->getdbConnection()->prepare('Select firstName from users where firstName =? or lastName =? or email =?  ');// refering to the connecting method of the database
+        if (!$stmt->execute(array($firstName , $lastName , $email))){
+            $stmt = null;
+            header("location: views/index.php?error=stmtfaild");
+            exit();
+        }
+        $resultCheck;
+        if ($stmt->rowCount()>0) {
+            $resultCheck =false;
+        }
+        else{
+            $resultCheck= true;
+        }
+        return $resultCheck;
+    }
+    protected function getUser($email, $password ){
+        $stmt = $this->getdbConnection()->prepare('select password from users where email =? or password =?;'); // not sure that connect() is correct
+
+        if(!$stmt->execute(array($email, $password))){
+            $stmt = null;
+            header("location :Views/index.php?error=stmtfailed");
+            exit();
+        }
+        if ($stmt->rowCount()==0){
+            $stmt = null;
+            header("location: Views/index.php?error=usernotfound");
+            exit();
+        }
+         $passwordHashed = $stmt->fetchAll(PDO::FETCH_ASSOC); 
+         $checkPassword = password_verify($password,$passwordHashed[0]["password"]);  
+       
+         if ($checkPassword ==false){
+            $stmt = null;
+            header("location: Views/index.php?error=wrongPassword");
+            exit();
+         } 
+         elseif($checkPassword == true){
+            $stmt = $this->getdbConnection()->prepare('SELECT *  FROM users Where email =? OR password=? ');
+         }
+            if()
+         $stmt=null;
+
+    }
+}

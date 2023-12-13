@@ -1,0 +1,207 @@
+[
+    {
+        "id":1,
+        "name1": "Ahmed",
+        "name2":" is a loveable goofball, he never fails to bring a smile to people’s faces (PS: he’s a mama’s boy).",
+        "prices": [
+            { "option": "small size", "price": 1.15 },
+            { "option": "medium size", "price": 1.25 },
+            { "option": "large size", "price": 1.45 }
+        ]
+    },
+    {
+        "id": 3,
+        "name1": "Azooz",
+        "name2": "Energetic and adventurous, loves activities and exploring new places.",
+        "prices": [
+            { "option": "small size", "price": 1.15 },
+            { "option": "medium size", "price": 1.25 },
+            { "option": "large size", "price": 1.45 }
+        ]
+    },
+    {
+        "id": 4,
+        "name1": "Mohammed",
+        "name2": "Very well known, handsome and all the ladies want a piece of him.",
+        "prices": [
+            { "option": "small size", "price": 1.15 },
+            { "option": "medium size", "price": 1.25 },
+            { "option": "large size", "price": 1.45 }
+        ]
+    },
+    {
+        "id": 5,
+        "name1": "Khaled",
+        "name2": "Unlikable, very annoying and he has a big head.",
+        "prices": [
+            { "option": "small size", "price": 1.15 },
+            { "option": "medium size", "price": 1.25 },
+            { "option": "large size", "price": 1.45 }
+        ]
+    },
+    {
+        "id": 6,
+        "name1": "Haman",
+        "name2": "Doesn’t care… that’s it.",
+        "prices": [
+            { "option": "small size", "price": 1.15 },
+            { "option": "medium size", "price": 1.25 },
+            { "option": "large size", "price": 1.45 }
+        ]
+    },
+    {
+        "id": 7,
+        "name1": "Hamza",
+        "name2": "Mindful and calm. Prioritizes religion every time. Has a big beard with crumbs all over.",
+        "prices": [
+            { "option": "small size", "price": 1.15 },
+            { "option": "medium size", "price": 1.25 },
+            { "option": "large size", "price": 1.45 }
+        ]
+    },
+    {
+        "id": 8,
+        "name1": "Ilslm",
+        "name2": "Prioritizes health, family and is an idiot who needs people to do things for him.",
+        "prices": [
+            { "option": "small size", "price": 1.15 },
+            { "option": "medium size", "price": 1.25 },
+            { "option": "large size", "price": 1.45 }
+        ]
+    },
+    {
+        "id": 8,
+        "name1": "BuAli",
+        "name2": "An obsessed character who can’t get enough of singing even though his voice sucks.",
+        "prices": [
+            { "option": "small size", "price": 1.15 },
+            { "option": "medium size", "price": 1.25 },
+            { "option": "large size", "price": 1.45 }
+        ]
+    },
+    {
+        "id": 10,
+        "name1": "Khalifa",
+        "name2": "A very well-mannered and elegant lad and has a sense of taste.",
+        "prices": [
+            { "option": "small size", "price": 1.15 },
+            { "option": "medium size", "price": 1.25 },
+            { "option": "large size", "price": 1.45 }
+        ]
+    },
+    {
+        "id": 11,
+        "name1": "BuHamdaan",
+        "name2": "Drives a cruiser and talks like he’s got it all figured out.",
+        "prices": [
+            { "option": "small size", "price": 1.15 },
+            { "option": "medium size", "price": 1.25 },
+            { "option": "large size", "price": 1.45 }
+        ]
+    },{
+        "id": 12,
+        "name1": "Maryam",
+        "name2": "she is bold, ambitious and dives in head-first into the most challenging situations.",
+        "prices": [
+            { "option": "small size", "price": 1.15 },
+            { "option": "medium size", "price": 1.25 },
+            { "option": "large size", "price": 1.45 }
+        ]
+    },{
+        "id": 13,
+        "name1": "Dana",
+        "name2": "Spontaneous, beautiful and doesn’t love the drama.",
+        "prices": [
+            { "option": "small size", "price": 1.15 },
+            { "option": "medium size", "price": 1.25 },
+            { "option": "large size", "price": 1.45 }
+        ]
+    },{
+        "id": 14,
+        "name1": "Noor",
+        "name2": "Cheerful and jolly character who spreads happiness wherever she goes.",
+        "prices": [
+            { "option": "small size", "price": 1.15 },
+            { "option": "medium size", "price": 1.25 },
+            { "option": "large size", "price": 1.45 }
+        ]
+    },{
+        "id": 15,
+        "name1": "Zain",
+        "name2": " She is loveable goofball, never fails to bring a smile to people’s faces.",
+        "prices": [
+            { "option": "small size", "price": 1.15 },
+            { "option": "medium size", "price": 1.25 },
+            { "option": "large size", "price": 1.45 }
+        ]
+    },{
+        "id": 16,
+        "name1": "Haya",
+        "name2": "Uptight, very short and angry.",
+        "prices": [
+            { "option": "small size", "price": 1.15 },
+            { "option": "medium size", "price": 1.25 },
+            { "option": "large size", "price": 1.45 }
+        ]
+    },{
+        "id": 17,
+        "name1": "Shaikha",
+        "name2": "A free spirit and an imaginative character who expresses creativity through various ways.",
+        "prices": [
+            { "option": "small size", "price": 1.15 },
+            { "option": "medium size", "price": 1.25 },
+            { "option": "large size", "price": 1.45 }
+        ]
+    },
+    {
+        "id": 18,
+        "name1": "Haya",
+        "name2": "Uptight, very short and angry.",
+        "prices": [
+            { "option": "small size", "price": 1.15 },
+            { "option": "medium size", "price": 1.25 },
+            { "option": "large size", "price": 1.45 }
+        ]
+    },
+    {
+        "id": 19,
+        "name1": "Fatima",
+        "name2": "Doesn’t need anyone; strong and ambitious.",
+        "prices": [
+            { "option": "small size", "price": 1.15 },
+            { "option": "medium size", "price": 1.25 },
+            { "option": "large size", "price": 1.45 }
+        ]
+    },
+    {
+        "id": 20,
+        "name1": "Reem",
+        "name2": "The sweetest of them all.",
+        "prices": [
+            { "option": "small size", "price": 1.15 },
+            { "option": "medium size", "price": 1.25 },
+            { "option": "large size", "price": 1.45 }
+        ]
+    }, {
+        "id": 21,
+        "name1": "Hessa",
+        "name2": "loves Bu Hamdaan type.",
+        "prices": [
+            { "option": "small size", "price": 1.15 },
+            { "option": "medium size", "price": 1.25 },
+            { "option": "large size", "price": 1.45 }
+        ]
+    }, {
+        "id": 22,
+        "name1": "Jood",
+        "name2": "Charming with her impeccable style, she captivates everyone she meets.",
+        "prices": [
+            { "option": "small size", "price": 1.15 },
+            { "option": "medium size", "price": 1.25 },
+            { "option": "large size", "price": 1.45 }
+        ]
+    }
+
+
+
+]

@@ -1,0 +1,42 @@
+<?php require_once("admindashboard.phtml"); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Create new Blog</title>  
+</head>
+<body>
+    <div style="margin-left: 20%;width: 75%" >
+    <h2>View users</h2>
+
+    <h3></h3>
+    <br>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>userID</th>
+            <th>firstName</th>
+            <th>lastName</th>
+            <th>email</th>
+            <!-- th>password</th!-->
+            <th></th>
+        </tr>
+
+        </thead>
+        <tbody>
+        <?php foreach ($view->userDataSet as $userData) {
+            echo '<tr> 
+    <td>' . $userData->getUserID() . '</td> 
+    <td>' . $userData->getFirstName() . '</td> 
+    <td>' .$userData->getLastName() .'</td> 
+    <td>' . $userData->getEmail() . '</td>
+     <!--td>' . $userData->getPassword() . '</td!-->
+    </tr>';
+        } ?>
+        </tbody>
+    </table>
+    </div>
+    </body>
+    </html>

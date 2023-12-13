@@ -1,0 +1,40 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.loyalty-points-container {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+/* Loyalty Points section styles */
+.loyalty-points {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.loyalty-points h1 {
+    color: #333;
+}
+
+.loyalty-points-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.points {
+    font-size: 36px;
+    font-weight: bold;
+    color: #FF5733;
+}
+
+.loyalty-rewards {
+    margin-top: 30px;
+}

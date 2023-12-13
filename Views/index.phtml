@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="with-device-width, initial-scale=1">
+    <title>Home page</title>
+    <link rel="stylesheet" href="/css/index.css"  type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/39355bfe1f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<section class="header">
+<nav>
+<a href="https://ibb.co/Rb6JDt3"><img src="https://i.ibb.co/nm1KL47/aaseer.png" alt="aaseer" border="0"></a>
+    <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+            <li>
+                <a href="../blog.php">BLOG</a>
+            </li><li>
+                <a href="../orderNow.php">ORDER NOW</a>
+            </li><li>
+                <a href="../contactus.php">CONTACT US</a>
+            </li>
+            <li>
+                <a href="../q&a.php">FAQ</a>
+            </li>
+            <?php
+        // Check if the user is logged in
+        if (isset($_SESSION['email'])) {
+            // If logged in, display a different button or link
+            echo '<li><a href="../profile.php">Profile</a></li>';
+            if($_SESSION['email'] == "mohammad.zeinali7717@gmail.com"){
+                echo '<li><a href="../admindashboard.php">ADMIN</a></li>';
+            }
+            echo '<li><a href="../logout.php">LOGOUT</a></li>';
+        } else {
+            // If not logged in, display the login button
+            echo '<li><a href="../logIn.php">LOGIN</a></li>';
+        }
+        ?>
+
+        </ul>
+    </div>
+    <div class="icon">
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+    </div>
+</nav>
+    <div class="text-box">
+        <h2>Enjoy the adventure not the trip</h2>
+        <a href="../orderNow.php" class="btn">Start your order</a>
+    </div>
+</section>
+
+<!-----second part------>
+<section class="ptw">
+    <h1>Unique</h1>
+    <p>Made with love.</p>
+    <div class="row">
+        <div class="course-col">
+            <h3>Hey there...</h3>
+            <p>You might be wondering, why should you give us a shot?
+            <br>
+            Let us tell you why, we've got the answers, we are not just your ordinary fruit enthusiasts. Oh no! we've gone through countless hours of analysis and mixing to create the
+                ultimate cure for your boredom, anxiousness, and loneliness.
+            </p>
+        </div>
+        <div class="course-col">
+            <h3>Just kidding..... No such thing</h3>
+            <p>But seriously picture this:
+                <br>
+                Perfectly fresh fruits, squeezed to perfection, in an unorthodox and non-traditional way imaginable, this time clean, neat, and fresh. It's like taking a sip
+                of the present while feeling the beauty of the past.
+                <br>
+                We are inspired by old school cafeterias, but adapting to the younger generation.
+
+            </p>
+        </div>
+    </div>
+</section>
+<!--------section three--------->
+<section class="sthre">
+    <h1>Our products</h1>
+    <p>Unorthodox and non-traditional</p>
+    <div class="row">
+        <div class="campus-col">
+        <a href="https://ibb.co/f8pCv9y"><img src="https://i.ibb.co/7gWG4QZ/pic1.jpg" alt="pic1" border="0"></a>
+            <div class="layer">
+                <h3>Best selling</h3>
+            </div>
+
+        </div>
+        <div class="campus-col2">
+        <a href="https://ibb.co/0rbg2Fw"><img src="https://i.ibb.co/GRSKpth/pic2.jpg" alt="pic2" border="0"></a>
+            <div class="layer">
+                <h3>Summer drinks!</h3>
+            </div>
+    </div>
+        <div class="campus-col">
+        <a href="https://ibb.co/rdz9TCv"><img src="https://i.ibb.co/y4Z2GwV/pic3.jpg" alt="pic3" border="0"></a>
+            <div class="layer">
+                <h3>Mojitos</h3>
+            </div>
+        </div>
+</section>
+<div class="google-map">
+    <h1>Your adventure starts here.</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d114573.81220814439!2d50.3849319!3d26.1826338!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3e49b1b29b112fa9%3A0x2d3d077f60b81a17!2sJanabiyah%20Hwy%2C%20Janabiyah%20571!3m2!1d26.1826573!2d50.4673334!5e0!3m2!1sen!2sbh!4v1701864704781!5m2!1sen!2sbh"
+            width="580" height="430" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<!-------section four-------->
+<section class="scfr">
+
+</section>
+<!-----Javascript for menu------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+
+    </script>
+    <div class="foot">
+        <p>Hi------------------------------------------------------------------------------------------</p>
+    </div>
+    <footer>
+<?php
+require('template/footer.phtml')?>
+    </footer>

@@ -1,0 +1,54 @@
+<?php require_once("template/header.phtml"); ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/ordernow.css">
+</head>
+<body>
+
+<div class="order">
+    <h3>Order Aaseer now!</h3>
+
+    <?php
+    // Start the session if not already started
+   // echo "hello";
+    $diabled = "disabled";
+    if (isset($_SESSION['email']) === true) {
+        $user_email = $_SESSION['email'];
+        //echo "email is set";
+        $diabled = "";
+    
+    }
+    else{
+        $diabled = "disabled";
+        echo "<p style='color:white;' >please login first </p>";
+    } 
+
+
+    ?>
+   <form class="login-form" action="menu.php" method="post"> 
+         <button type="submit" class="button" onclick="alert" <?php echo $diabled ;?>>Pickup Order</button>';
+    </form>
+   
+    <a href="https://www.jahez.net/" class="button">
+        <img src="/img/jahez.png" alt="Image 1">
+        Jahez
+    </a>
+
+    <a href="https://www.talabat.com/bahrain" class="button">
+        <img src="/img/talabat.png" alt="Image 2">
+        Talabat
+    </a>
+
+</div>
+
+<?php
+// Check if the user is not logged in when trying to access menu.php directly
+if (isset($_SESSION['email']) !== true) {
+    echo "<p>You are not logged in. Please log in or register first.</p>";
+}
+?>
+
+</body>
+</html>

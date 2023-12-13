@@ -1,0 +1,32 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "bublab.com",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "aaseer",
+            "database": "bublab_ISMAEEL",
+            "username": "bublab_ISMAEEL",
+            "password": "wDYPhB8Zg+p#"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "sql12.freesqldatabase.com",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "aaseerOnline",
+            "database": "sql12667795",
+            "username": "sql12667795",
+            "password": "dFq3bx83Nm"
+        }
+    ]
+}

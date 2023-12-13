@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Views/menu.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Drinks Menu</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            <h1>Drinks Menu</h1>
+            <div class="menu" id="menu">
+                <!-- Drink 1 -->
+                <div class="drink" data-id="1">
+                    <img src="/juice/1.jpg" alt="drink1">
+                    <h2>Ahmed</h2>
+                    <p> is a loveable goofball, he never fails to bring a smile to people’s faces (PS: he’s a mama’s boy).</p>
+                    <div class="size-container">
+                        <label for="size-1">Size:</label>
+                        <select id="size-1" class="size-dropdown" data-small="1.15" data-medium="1.25" data-large="1.45">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="quantity-container">
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-1', -1)">-</button>
+                        <span class="quantity" id="quantity-1">1</span>
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-1', 1)">+</button>
+                    </div>
+                    <button class="btn btn-success add-to-cart" onclick="addToCart('Ahmed', 1)">Add to Cart</button>
+                </div>
+
+                <!-- Drink 2 -->
+                <div class="drink" data-id="2">
+                <img src="/juice/2.jpg" alt="drink2">
+                    <h2>Abdullah</h2>
+                    <p>Busy professional with a hectic schedule and never has time for the gym.</p>
+                    <div class="size-container">
+                        <label for="size-2">Size:</label>
+                        <select id="size-2" class="size-dropdown" data-small="1.15" data-medium="1.25" data-large="1.45">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="quantity-container">
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-2', -1)">-</button>
+                        <span class="quantity" id="quantity-2">1</span>
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-2', 1)">+</button>
+                    </div>
+                    <button class="btn btn-success add-to-cart" onclick="addToCart('Abdullah', 2)">Add to Cart</button>
+                </div>
+                <!-- Drink 3 -->
+                <div class="drink" data-id="3">
+                <img src="/juice/3.jpg" alt="drink3">
+                    <h2>Azooz</h2>
+                    <p>Energetic and adventurous, loves activities and exploring new places.</p>
+                    <div class="size-container">
+                        <label for="size-3">Size:</label>
+                        <select id="size-3" class="size-dropdown" data-small="1.15" data-medium="1.25" data-large="1.45">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="quantity-container">
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-3', -1)">-</button>
+                        <span class="quantity" id="quantity-3">1</span>
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-3', 1)">+</button>
+                    </div>
+                    <button class="btn btn-success add-to-cart" onclick="addToCart('Azooz', 3)">Add to Cart</button>
+                </div>
+                <!-- Drink 4 -->
+                <div class="drink" data-id="4">
+                <img src="/juice/4.jpg" alt="drink4">
+                    <h2>Mohammed</h2>
+                    <p>Very well known, handsome and all the ladies want a piece of him.</p>
+                    <div class="size-container">
+                        <label for="size-4">Size:</label>
+                        <select id="size-4" class="size-dropdown" data-small="1.15" data-medium="1.25" data-large="1.45">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="quantity-container">
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-4', -1)">-</button>
+                        <span class="quantity" id="quantity-4">1</span>
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-4', 1)">+</button>
+                    </div>
+                    <button class="btn btn-success add-to-cart" onclick="addToCart('Mohammed', 4)">Add to Cart</button>
+                </div>
+                <!-- Drink 5 -->
+                <div class="drink" data-id="5">
+                <img src="/juice/5.jpg" alt="drink5">
+                    <h2>Khaled</h2>
+                    <p>Unlikable, very annoying and he has a big head.</p>
+                    <div class="size-container">
+                        <label for="size-5">Size:</label>
+                        <select id="size-5" class="size-dropdown" data-small="1.15" data-medium="1.25" data-large="1.45">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="quantity-container">
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-5', -1)">-</button>
+                        <span class="quantity" id="quantity-5">1</span>
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-5', 1)">+</button>
+                    </div>
+                    <button class="btn btn-success add-to-cart" onclick="addToCart('Khaled', 5)">Add to Cart</button>
+                </div>
+                <!-- Drink 6 -->
+                <div class="drink" data-id="6">
+                <img src="/juice/6.jpg" alt="drink6">
+                    <h2>Haman</h2>
+                    <p>Doesn’t care… that’s it.</p>
+                    <div class="size-container">
+                        <label for="size-6">Size:</label>
+                        <select id="size-6" class="size-dropdown" data-small="1.15" data-medium="1.25" data-large="1.45">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="quantity-container">
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-6', -1)">-</button>
+                        <span class="quantity" id="quantity-6">1</span>
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-6', 1)">+</button>
+                    </div>
+                    <button class="btn btn-success add-to-cart" onclick="addToCart('Haman', 6)">Add to Cart</button>
+                </div>
+                <!-- Drink 7 -->
+                <div class="drink" data-id="7">
+                <img src="/juice/7.jpg" alt="drink7">
+                    <h2>Hamza</h2>
+                    <p>Mindful and calm. Prioritizes religion every time. Has a big beard with crumbs all over.</p>
+                    <div class="size-container">
+                        <label for="size-7">Size:</label>
+                        <select id="size-7" class="size-dropdown" data-small="1.15" data-medium="1.25" data-large="1.45">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="quantity-container">
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-7', -1)">-</button>
+                        <span class="quantity" id="quantity-7">1</span>
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-7', 1)">+</button>
+                    </div>
+                    <button class="btn btn-success add-to-cart" onclick="addToCart('Hamza', 7)">Add to Cart</button>
+                </div>
+                <!-- Drink 8 -->
+                <div class="drink" data-id="8">
+                <img src="/juice/8.jpg" alt="drink8">
+                    <h2>Ilslm</h2>
+                    <p>Prioritizes health, family and is an idiot who needs people to do things for him.</p>
+                    <div class="size-container">
+                        <label for="size-8">Size:</label>
+                        <select id="size-8" class="size-dropdown" data-small="1.15" data-medium="1.25" data-large="1.45">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="quantity-container">
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-8', -1)">-</button>
+                        <span class="quantity" id="quantity-8">1</span>
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-8', 1)">+</button>
+                    </div>
+                    <button class="btn btn-success add-to-cart" onclick="addToCart('Ilslm', 8)">Add to Cart</button>
+                </div>
+                <!-- Drink 9 -->
+                <div class="drink" data-id="9">
+                <img src="/juice/1.jpg" alt="drink9">
+                    <h2>BuAli</h2>
+                    <p>An obsessed character who can’t get enough of singing even though his voice sucks.</p>
+                    <div class="size-container">
+                        <label for="size-9">Size:</label>
+                        <select id="size-9" class="size-dropdown" data-small="1.15" data-medium="1.25" data-large="1.45">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="quantity-container">
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-9', -1)">-</button>
+                        <span class="quantity" id="quantity-9">1</span>
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-9', 1)">+</button>
+                    </div>
+                    <button class="btn btn-success add-to-cart" onclick="addToCart('BuAli', 9)">Add to Cart</button>
+                </div>
+                <!-- Drink 10 -->
+                <div class="drink" data-id="10">
+                <img src="/juice/2.jpg" alt="drink10">
+                    <h2>Khalifa</h2>
+                    <p>A very well-mannered and elegant lad and has a sense of taste.</p>
+                    <div class="size-container">
+                        <label for="size-10">Size:</label>
+                        <select id="size-10" class="size-dropdown" data-small="1.15" data-medium="1.25" data-large="1.45">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="quantity-container">
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-10', -1)">-</button>
+                        <span class="quantity" id="quantity-10">1</span>
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-10', 1)">+</button>
+                    </div>
+                    <button class="btn btn-success add-to-cart" onclick="addToCart('Khalifa', 10)">Add to Cart</button>
+                </div>
+                <!-- Drink 11 -->
+                <div class="drink" data-id="11">
+                <img src="/juice/3.jpg" alt="drink11">
+                    <h2>BuHamdaan</h2>
+                    <p>Drives a cruiser and talks like he’s got it all figured out.</p>
+                    <div class="size-container">
+                        <label for="size-11">Size:</label>
+                        <select id="size-11" class="size-dropdown" data-small="1.15" data-medium="1.25" data-large="1.45">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="quantity-container">
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-11', -1)">-</button>
+                        <span class="quantity" id="quantity-11">1</span>
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-11', 1)">+</button>
+                    </div>
+                    <button class="btn btn-success add-to-cart" onclick="addToCart('BuHamdaan', 11)">Add to Cart</button>
+                </div>
+                <!-- Drink 12 -->
+                <div class="drink" data-id="12">
+                <img src="/juice/4.jpg" alt="drink12">
+                    <h2>Maryam</h2>
+                    <p>she is bold, ambitious and dives in head-first into the most challenging situations.</p>
+                    <div class="size-container">
+                        <label for="size-12">Size:</label>
+                        <select id="size-12" class="size-dropdown" data-small="1.15" data-medium="1.25" data-large="1.45">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="quantity-container">
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-12', -1)">-</button>
+                        <span class="quantity" id="quantity-12">1</span>
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-12', 1)">+</button>
+                    </div>
+                    <button class="btn btn-success add-to-cart" onclick="addToCart('Maryam', 12)">Add to Cart</button>
+                </div>
+                <!-- Drink 13 -->
+                <div class="drink" data-id="13">
+                <img src="/juice/5.jpg" alt="drink13">
+                    <h2>Dana</h2>
+                    <p>Spontaneous, beautiful and doesn’t love the drama.</p>
+                    <div class="size-container">
+                        <label for="size-13">Size:</label>
+                        <select id="size-13" class="size-dropdown" data-small="1.15" data-medium="1.25" data-large="1.45">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="quantity-container">
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-13', -1)">-</button>
+                        <span class="quantity" id="quantity-13">1</span>
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-13', 1)">+</button>
+                    </div>
+                    <button class="btn btn-success add-to-cart" onclick="addToCart('Dana', 13)">Add to Cart</button>
+                </div>
+                <!-- Drink 14 -->
+                <div class="drink" data-id="14">
+                <img src="/juice/6.jpg" alt="drink14">
+                    <h2>Noor</h2>
+                    <p>Cheerful and jolly character who spreads happiness wherever she goes.</p>
+                    <div class="size-container">
+                        <label for="size-14">Size:</label>
+                        <select id="size-14" class="size-dropdown" data-small="1.15" data-medium="1.25" data-large="1.45">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="quantity-container">
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-14', -1)">-</button>
+                        <span class="quantity" id="quantity-14">1</span>
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-14', 1)">+</button>
+                    </div>
+                    <button class="btn btn-success add-to-cart" onclick="addToCart('Noor', 14)">Add to Cart</button>
+                </div>
+                <!-- Drink 15 -->
+                <div class="drink" data-id="15">
+                <img src="/juice/7.jpg" alt="drink15">
+                    <h2>Zain</h2>
+                    <p>She is loveable goofball, never fails to bring a smile to people’s faces.</p>
+                    <div class="size-container">
+                        <label for="size-15">Size:</label>
+                        <select id="size-15" class="size-dropdown" data-small="1.15" data-medium="1.25" data-large="1.45">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="quantity-container">
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-15', -1)">-</button>
+                        <span class="quantity" id="quantity-15">1</span>
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-15', 1)">+</button>
+                    </div>
+                    <button class="btn btn-success add-to-cart" onclick="addToCart('Zain', 15)">Add to Cart</button>
+                </div>
+                <!-- Drink 16 -->
+                <div class="drink" data-id="16">
+                <img src="/juice/8.jpg" alt="drink8">
+                    <h2>Haya</h2>
+                    <p>Uptight, very short and angry.</p>
+                    <div class="size-container">
+                        <label for="size-16">Size:</label>
+                        <select id="size-16" class="size-dropdown" data-small="1.15" data-medium="1.25" data-large="1.45">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="quantity-container">
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-16', -1)">-</button>
+                        <span class="quantity" id="quantity-16">1</span>
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-16', 1)">+</button>
+                    </div>
+                    <button class="btn btn-success add-to-cart" onclick="addToCart('Haya', 16)">Add to Cart</button>
+                </div>
+                <!-- Drink 17 -->
+                <div class="drink" data-id="17">
+                <img src="/juice/1.jpg" alt="drink17">
+                    <h2>Shaikha</h2>
+                    <p>A free spirit and an imaginative character who expresses creativity through various ways.</p>
+                    <div class="size-container">
+                        <label for="size-17">Size:</label>
+                        <select id="size-17" class="size-dropdown" data-small="1.15" data-medium="1.25" data-large="1.45">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="quantity-container">
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-17', -1)">-</button>
+                        <span class="quantity" id="quantity-17">1</span>
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-17', 1)">+</button>
+                    </div>
+                    <button class="btn btn-success add-to-cart" onclick="addToCart('Shaikha', 17)">Add to Cart</button>
+                </div>
+                <!-- Drink 18 -->
+                <div class="drink" data-id="18">
+                <img src="/juice/2.jpg" alt="drink18">
+                    <h2>Fatima</h2>
+                    <p>Doesn’t need anyone; strong and ambitious.</p>
+                    <div class="size-container">
+                        <label for="size-18">Size:</label>
+                        <select id="size-18" class="size-dropdown" data-small="1.15" data-medium="1.25" data-large="1.45">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="quantity-container">
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-18', -1)">-</button>
+                        <span class="quantity" id="quantity-18">1</span>
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-18', 1)">+</button>
+                    </div>
+                    <button class="btn btn-success add-to-cart" onclick="addToCart('Fatima', 18)">Add to Cart</button>
+                </div>
+                <!-- Drink 19 -->
+                <div class="drink" data-id="19">
+                <img src="/juice/3.jpg" alt="drink19">
+                    <h2>Aisha</h2>
+                    <p>Playful and light-hearted with a very long and time-consuming makeup routine</p>
+                    <div class="size-container">
+                        <label for="size-19">Size:</label>
+                        <select id="size-19" class="size-dropdown" data-small="1.15" data-medium="1.25" data-large="1.45">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="quantity-container">
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-19', -1)">-</button>
+                        <span class="quantity" id="quantity-19">1</span>
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-19', 1)">+</button>
+                    </div>
+                    <button class="btn btn-success add-to-cart" onclick="addToCart('Aisha', 19)">Add to Cart</button>
+                </div>
+                <!-- Drink 20 -->
+                <div class="drink" data-id="20">
+                <img src="/juice/4.jpg" alt="drink20">
+                    <h2>Reem</h2>
+                    <p>The sweetest of them all.</p>
+                    <div class="size-container">
+                        <label for="size-20">Size:</label>
+                        <select id="size-20" class="size-dropdown" data-small="1.15" data-medium="1.25" data-large="1.45">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="quantity-container">
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-20', -1)">-</button>
+                        <span class="quantity" id="quantity-20">1</span>
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-20', 1)">+</button>
+                    </div>
+                    <button class="btn btn-success add-to-cart" onclick="addToCart('Reem', 20)">Add to Cart</button>
+                </div>
+                <!-- Drink 21 -->
+                <div class="drink" data-id="21">
+                <img src="/juice/5.jpg" alt="drink21">
+                    <h2>Hessa</h2>
+                    <p>loves Bu Hamdaan type.</p>
+                    <div class="size-container">
+                        <label for="size-21">Size:</label>
+                        <select id="size-21" class="size-dropdown" data-small="1.15" data-medium="1.25" data-large="1.45">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="quantity-container">
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-21', -1)">-</button>
+                        <span class="quantity" id="quantity-21">1</span>
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-21', 1)">+</button>
+                    </div>
+                    <button class="btn btn-success add-to-cart" onclick="addToCart('Hessa', 21)">Add to Cart</button>
+                </div>
+                <!-- Drink 22 -->
+                <div class="drink" data-id="22">
+                <img src="/juice/6.jpg" alt="drink22">
+                    <h2>Jood</h2>
+                    <p>Charming with her impeccable style, she captivates everyone she meets.</p>
+                    <div class="size-container">
+                        <label for="size-22">Size:</label>
+                        <select id="size-22" class="size-dropdown" data-small="1.15" data-medium="1.25" data-large="1.45">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="quantity-container">
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-22', -1)">-</button>
+                        <span class="quantity" id="quantity-22">1</span>
+                        <button class="quantity-btn" onclick="updateQuantity('quantity-22', 1)">+</button>
+                    </div>
+                    <button class="btn btn-success add-to-cart" onclick="addToCart('Jood', 22)">Add to Cart</button>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="cart">
+                <h2>Shopping Cart</h2>
+                <ul id="cart-items" class="list-group"></ul>
+                <p>Total: BD<span id="cart-total">0.00</span></p>
+                <button id="checkoutButton" class="btn btn-primary" onclick="proceedToCheckout()">Proceed to Checkout</button>
+                <div id="cart-container"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../menu.js"></script>
+
+<script src="menu.js"></script>
+</body>
+</html>
+   

@@ -1,0 +1,48 @@
+body {
+    background-color: #28a745;
+    font-family: system-ui;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 800px; /* Adjust the width of the container */
+    margin: auto;
+    transition: 0.5s;
+}
+
+.drink {
+    border: 3px solid #ccc;
+    border-radius: 7%;
+    align-items: center;
+    padding: 5px;
+    width: calc(50% - 10px);
+    height: 70%; /* Adjust the height of the drink */
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.drink:hover {
+    transform: scale(1.02);
+}
+
+.listCard li img {
+    width: 70%; /* Adjust the width of the image */
+    max-height: 150px; /* Adjust the maximum height of the image */
+}
+
+/* Additional styles for better responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 100%; /* Adjust container width for smaller screens */
+    }
+
+    .drink {
+        width: 100%; /* Make the drink take the full width on smaller screens */
+    }
+
+    .listCard li img {
+        width: 100%; /* Make the image take the full width on smaller screens */
+        max-height: 100%; /* Adjust the maximum height of the image for smaller screens */
+    }
+}

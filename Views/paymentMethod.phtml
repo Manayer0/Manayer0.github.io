@@ -1,0 +1,75 @@
+
+<html>
+<body>
+    <link rel="stylesheet" href="../css/paymentMethod.css"  type="text/css">
+    <script src="https://kit.fontawesome.com/4b60169630.js" crossorigin="anonymous"></script>
+
+    <div class="payment">
+
+        <div class="title">
+            <h3> select your preferred <span>payment</span> method :</h3>
+        </div>
+        
+        <form  action="../placedOrder.php" method="post">
+                <input type="radio" id="cash" name="payments" style="visibility: hidden;" value="Cash" onclick="showMessage('cash')">
+                <input type="radio" id="card" name="payments" style="visibility: hidden;"  value="Debit/Credit Card" onclick="showMessage('card')">
+                <input type="radio" id="benefit" name="payments" style="visibility: hidden;"  value="Benefit Pay" onclick="showMessage('benefit')">
+
+                <input type="hidden" id="items_text" name="items_text" value=""> 
+                <input type="hidden" id="subtotal" name="subtotal" value=""> 
+
+            <div class="category">
+                <label for="cash" class="cashMethod">
+                    <div class="imgName">
+                        <div class="imageContainer">
+                            <img src="../img/cash.png" alt="">
+                        </div>
+                        <span class="name">CASH</span>
+                    </div>
+                    <span class="check"><i class="fa-solid fa-circle-check"></i></span>
+                </label>
+                <label for="card" class="cardMethod">
+                    <div class="imgName">
+                        <div class="imageContainer card">
+                            <img src="../img/visa&mastercard.png" alt="">
+                        </div>
+                        <span class="name">VISA & Master Card</span>
+                    </div>
+                    <span class="check"><i class="fa-solid fa-circle-check"></i></span>
+                </label>
+                <label for="benefit" class="benefitMethod">
+                    <div class="imgName">
+                        <div class="imageContainer benefit">
+                            <img src="../img/benefit.png" alt="">
+                        </div>
+                        <span class="name">Benefit Pay</span>
+                    </div>
+                    <span class="check"><i class="fa-solid fa-circle-check"></i></span>
+                </label>
+            </div>
+ 
+
+    
+            <input type="submit" value="Submit" method="post" class="by" onclick="localStorage.clear()">
+        </form>
+    </div>
+    </html>
+
+</div>
+
+
+<script>
+    var items_text =localStorage.getItem("item_text");
+    var subtotal_value =localStorage.getItem("subtotal");
+    
+    var items_input =document.getElementById("items_text");
+    var subtotal_input =document.getElementById("subtotal");
+
+    items_input.value = items_text;
+    subtotal_input.value = subtotal_value;
+    console.log("items_text :" + items_text + " subtotal_value: "+ subtotal_value);
+
+    
+
+</script>
+</body>

@@ -1,0 +1,28 @@
+<?php require_once("admindashboard.phtml"); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/newBlog.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Create new Blog</title>  
+</head>
+<div style="margin-left: 20%;width: 75%" >
+
+<div class="container">
+        <!-- HTML form for adding a new juice -->
+        <form class="newBlog" method="post" action="">
+            <h2> Add New Blog </h2>
+            <div class="input-box">
+                <input type="text" id="subject" name="subject"  placeholder="subject" required>
+            </div>
+
+            <div class="input-box">
+                <textarea name="description" placeholder="description" required></textarea>
+            </div>
+            <button class="btn" type="submit" id="submit" name="submit">post new blog</button>
+
+        </form>
+
+    </div>
