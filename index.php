@@ -8,7 +8,7 @@ if(isset($_SESSION['t'])){
  }
 $view = new stdClass();
 $view->pageTitle = 'Homepage';
-require_once('Views/index.phtml');
+require_once('Views/index.html');
 
 
 
